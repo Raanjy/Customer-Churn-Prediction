@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Churn Prediction</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="title">Customer Churn Prediction</div>
+        <div class="sub-title">Predictive Analysis</div>
+        <form action="/predict" method="POST">
+            <div class="user-detail">
+                <div class="input-box">
+                    <span class="details">CreditScore <br>(Enter Values:) </span>
+                    <input id="first" name="CreditScore" type="number ">
+                </div>
+                <div class="input-box">
+                    <span class="details">Gender<br>(0 means Female | 1 means Male)</span>
+                    <select id="Second" name="Gender">
+                        <option value="1">Male</option>
+                        <option value="0">Female</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class="details">Geography<br>(Enter Values in B/W 0 and 3)</span>
+                    <input id="third" name="Geography" required="required">
+                </div>
+                <div class="input-box">
+                    <span class="details">Age</span>
+                    <input id="fourth" name="Age" required="required">
+                </div>
+                <div class="input-box">
+                    <span class="details">Tenure<br>(Enter Values in B/W 0 to 10)</span>
+                    <input id="fifth" name="Tenure" required="required">
+                </div>
+                <div class="input-box">
+                    <span class="details">HasCrCard<br>(Enter Values in B/W 0 and 1)</span>
+                    <input id="sixth" name="HasCrCard" required="required">
+                </div>
+                <div class="input-box">
+                    <span class="details">IsActiveMember<br>(Enter Values in B/W 0 and 1)</span>
+                    <input id="seventh" name="IsActiveMember" required="required">
+                </div>
+                <div class="input-box">
+                    <span class="details">Balance</span>
+                    <input id="eighth" name="Balance" required="required">
+                </div>
+                <div class="input-box">
+                    <span class="details">NumOfProducts<br>(Enter Values in B/W 0 and 4)</span>
+                    <input id="nineth" name="NumOfProducts" required="required">
+                </div>
+                <div class="input-box">
+                    <span class="details">EstimatedSalary</span>
+                    <input name="EstimatedSalary" id="tenth" required="required">
+                </div>
+
+            </div>
+            <div class="button">
+                <button id="sub" type="submit ">Calculate Prediction</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+</body>
+</html>
